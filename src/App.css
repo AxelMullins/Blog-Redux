@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.post-item {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 5px #e6e6e6;
+}
+
+.post-item h3 {
+  font-size: 1.5em;
+  margin: 0;
+
+}
+
+.post-item button {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 5px #e6e6e6;
+}
+
+form {
+  background-color: rgb(63, 63, 63);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+  input[type="text"], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    height: 100px;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-form {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn-form:disabled {
+    background-color: #ccc;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
